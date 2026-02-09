@@ -1,8 +1,9 @@
+## do this if you have conda
 conda create -p $(pwd)/idre-env python=3.10 -y
-conda init bash
-source ~/.bashrc
 conda activate -p $(pwd)/idre-env
-conda install -c conda-forge ase pyscf -y
+###
+pip install ase
+pip install --prefer-binary pyscf
 module load gcc/11.3.0 intel/2020.4 intel/mpi
 pip install gpaw
 module load cuda/11.8
