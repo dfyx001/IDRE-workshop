@@ -1,1 +1,1 @@
-mpirun -np 32 python gen_dataset.py
+mpirun -np 32 python -u gen_dataset.py
